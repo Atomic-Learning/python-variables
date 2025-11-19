@@ -1,1 +1,97 @@
+In Python, a variable is the name used in source code to a storage location in the computer's memory. We can create a variable by writing the name of the variable followed by an equals sign (`=`) and then the value we want to store in that variable. If we use the variable name later in our code, Python will replace it with the value we assigned to it. In the example below, we create a variable called `age` and assign it the value `25`. When we print the value of `age`, Python outputs `25`.
 
+<py-cell>age = 25
+print(age)
+</py-cell>
+
+<h2>Variable Naming Rules</h2>
+
+When naming variables in Python, there are a few important rules to follow:
+<ul>
+    <li>Variable names can only contain letters (a-z, A-Z), numbers (0-9), and underscores (_).</li>
+    <li>Variable names cannot start with a number. For example, <code>1st_place</code> is not a valid variable name.</li>
+    <li>Variable names are case-sensitive. This means that <code>age</code>, <code>Age</code>, and <code>AGE</code> are considered different variables.</li>
+</ul>
+
+In addition, variables may not use Python reserved words (keywords), as these have special meanings in the language. These values are:
+
+<table>
+    <tr>
+        <td><code>and</code></td>
+        <td><code>as</code></td>
+        <td><code>assert</code></td>
+        <td><code>async</code></td>
+        <td><code>await</code></td>
+        <td><code>break</code></td>
+    </tr>
+    <tr>
+        <td><code>class</code></td>
+        <td><code>continue</code></td>
+        <td><code>def</code></td>
+        <td><code>del</code></td>
+        <td><code>elif</code></td>
+        <td><code>else</code></td>
+    </tr>
+    <tr>
+        <td><code>except</code></td>
+        <td><code>False</code></td>
+        <td><code>finally</code></td>
+        <td><code>for</code></td>
+        <td><code>from</code></td>
+        <td><code>global</code></td>
+    </tr>
+    <tr>
+        <td><code>if</code></td>
+        <td><code>import</code></td>
+        <td><code>in</code></td>
+        <td><code>is</code></td>
+        <td><code>lambda</code></td>
+        <td><code>None</code></td>
+    </tr>
+    <tr>
+        <td><code>nonlocal</code></td>
+        <td><code>not</code></td>
+        <td><code>or</code></td>
+        <td><code>pass</code></td>
+        <td><code>raise</code></td>
+        <td><code>return</code></td>
+    </tr>
+    <tr>
+        <td><code>True</code></td>
+        <td><code>try</code></td>
+        <td><code>while</code></td>
+        <td><code>with</code></td>
+        <td><code>yield</code></td>
+        <td></td>
+    </tr>
+</table>
+
+<h2>Variable Name Clashes</h2>
+
+Although the prohibition of reserved words helps avoid some naming conflicts, it is still possible to accidentally overwrite important built-in functions or modules by using the same name for a variable. For example, if we create a variable called <code>print</code>, our variable will hide (or "shadow") the built-in <code>print</code> function, and we will no longer be able to use it until we delete our variable. For example, the code cell below shows what happens when we create a variable called <code>print</code> and then try to use the <code>print</code> function.
+
+<py-cell>print = "Hello, World!" # This creates a variable called 'print'
+print(10) # This will cause an error
+</py-cell>
+
+You should have seen an error message indicating that a <code>int</code> object is not callable. This is because Python is trying to call our variable <code>print</code> (which is a integer) instead of the built-in <code>print</code> function. In order to fix this, reload the page and the proceed without re-running the code cell above.
+
+To avoid such issues, it is a good practice to choose variable names that are unlikely to clash with built-in names.
+
+
+<h2>Variables and expressions</h2>
+
+If the code on the right-hand side of the assignment operator is an expression, Python will first evaluate the expression and then assign the resulting value to the variable. For example, in the code below, we create a variable called `x` and assign it the result of the expression `5 + 3`. Python evaluates the expression to get `8`, and then assigns that value to `x`. When we print the value of `x`, Python outputs `8`.
+
+<py-cell>x = 5 + 3
+print(x)
+</py-cell>
+
+<h2>Changing Variable Values</h2>
+
+We can change the value of a variable by assigning a new value to it. For example, in the code below, we first create a variable called `count` and assign it the value `10`. We then change the value of `count` to `20` by assigning a new value to it. When we print the value of `count`, Python outputs `20`.
+
+<py-cell>count = 10
+count = 20
+print(count)
+</py-cell>
