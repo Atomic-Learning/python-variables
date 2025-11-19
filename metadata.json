@@ -11,7 +11,7 @@
     "prerequisites": [
         "python-print",
         "python-comments",
-        "python-expressions",
+        "programming-expressions",
         "programming-variables"
     ],
     "related": [
