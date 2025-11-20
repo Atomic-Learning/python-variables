@@ -72,7 +72,7 @@ Although the prohibition of reserved words helps avoid some naming conflicts, it
 <py-cell>print = 5 # This creates a variable called 'print'
 print(10) # This will cause an error</py-cell>
 
-You should have seen an error message indicating that a <code>int</code> object is not callable. This is because Python is trying to call our variable <code>print</code> (which is a integer) instead of the built-in <code>print</code> function. In order to fix this, reload the page and the proceed without re-running the code cell above.
+You should have seen an error message indicating that a <code>int</code> object is not callable. This is because Python is trying to call our variable <code>print</code> (which is a integer) as if it were a function, instead of the built-in <code>print</code> function. In order to fix this, reload the page and the proceed without re-running the code cell above.
 
 To avoid such issues, it is a good practice to choose variable names that are unlikely to clash with built-in names.
 
