@@ -15,6 +15,7 @@
         "programming-variables"
     ],
     "related": [
-        "python-basic-arithmetic"
+        "python-basic-arithmetic",
+        "python-functions"
     ]
 }
