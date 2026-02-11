@@ -1,7 +1,7 @@
 {
     "title": "Python: Variables",
     "slug": "python-variables",
-    "description": "An introduction to variables in Python.",
+    "description": "An introduction to variables in Python. Includes a discussion of variable naming rules, the basics of assignment, shadowing built-in function names, and assignment using expressions.",
     "authors": [
         "chris-cooling"
     ],
