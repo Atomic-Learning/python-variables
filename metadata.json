@@ -17,6 +17,7 @@
     ],
     "related": [
         "python-basic-arithmetic",
-        "python-functions"
+        "python-functions",
+        "programming-assignment-operator"
     ]
 }
