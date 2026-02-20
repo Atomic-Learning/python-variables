@@ -12,7 +12,7 @@ When naming variables in Python, there are a few important rules to follow:
     <li>Variable names are case-sensitive. This means that <code>age</code>, <code>Age</code>, and <code>AGE</code> are considered different variables.</li>
 </ul>
 
-In addition, variables may not use Python reserved words (keywords), as these have special meanings in the language. These values are:
+In addition, variables may not use Python reserved words (keywords), as these have special meanings in the language. These keywords are:
 
 <table>
     <tr>
@@ -82,7 +82,8 @@ To avoid such issues, it is a good practice to choose variable names that are un
 If the code on the right-hand side of the assignment operator is an expression, Python will first evaluate the expression and then assign the resulting value to the variable. For example, in the code below, we create a variable called <code>x</code> and assign it the result of the expression <code>5 + 3</code>. Python evaluates the expression to get <code>8</code>, and then assigns that value to <code>x</code>. When we print the value of <code>x</code>, Python outputs <code>8</code>.
 
 <py-cell>x = 5 + 3
-print(x)</py-cell>
+print(x)
+# If you get an error, reload the page to get rid of the variable named print from the previous cell</py-cell>
 
 <h2>Changing Variable Values</h2>
 
