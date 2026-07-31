@@ -16,8 +16,7 @@
         "programming-variables"
     ],
     "related": [
-        "python-basic-arithmetic",
-        "python-functions",
+        "python-arithmetic-operators",
         "programming-assignment-operator"
     ]
 }
